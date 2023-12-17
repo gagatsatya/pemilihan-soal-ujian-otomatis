@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Ujian</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="navbar">
+        <div id="listMenu">
+            <a href="/" id="menuUjian">Daftar Ujian</a>
+            <a href="/soal" id="menuSoal" class="active">Daftar Soal</a>
+        </div>
+    </div>
+
+    <div id="content">
+        <h1 class="judul">Dashboard Manajemen Ujian</h1>
+        <div id="table-container">
+            <table>
+                <thead>
+                    <tr>
+                      <th>NO</th>
+                      <th>Mata Kuliah</th>
+                      <th>Pertanyaan</th>
+                      <th>Kesulitan</th>
+                      <th>BAB</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% let counter = 1; %>
+                    <% data.forEach(item => { %>
+                      <tr>
+                        <td><%= counter++; %></td>
+                        <td><%= item.mata_kuliah %></td>
+                        <td><%= item.pertanyaan %></td>
+                        <td><%= item.tingkat_kesulitan %></td>
+                        <td><%= item.bab %></td>
+                      </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="create-exam-btn">
+        <a href="/tambahSoal" type="button">Tambah Soal Baru</a>
+    </div>
+    <!-- <button id="create-exam-btn">Buat Ujian Baru</button> -->
+
+</body>
+</html>

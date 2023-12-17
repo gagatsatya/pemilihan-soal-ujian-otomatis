@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Tambah Ujian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Form Tambah Ujian</h2>
+
+  <form action="http://localhost:3000/buatUjian" method="POST">
+    <div class="form-group">
+      <label for="mata_kuliah">Mata Kuliah:</label>
+      <select id="mata_kuliah" name="mata_kuliah">
+        <option value="PPS">PPS</option>
+        <option value="MDIK">MDIK</option>
+        <option value="MOSI">MOSI</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="jenis">Jenis:</label>
+      <select id="jenis" name="jenis">
+        <option value="Kuis">Kuis</option>
+        <option value="UTS">UTS</option>
+        <option value="UAS">UAS</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="jumlah_soal">Jumlah Soal:</label>
+      <input type="number" id="jumlah_soal" name="jumlah_soal" style="width: 50px" required>
+    </div>
+
+    <div class="form-group">
+      <label for="durasi">Durasi:</label>
+      <input type="number" id="durasi" name="durasi" style="width: 30px" required>
+      <label for="durasi">menit</label>
+    </div>
+
+    <div class="form-group">
+      <label for="tanggal">Tanggal:</label>
+      <input type="date" id="tanggal" name="tanggal" style="width: 105px">
+    </div>
+
+    <div class="form-group">
+      <label for="jam">Jam:</label>
+      <input type="time" id="jam" name="jam" style="width: 80px">
+    </div>
+
+    <div class="form-group">
+      <h4>Materi Dan Tingkat Kesulitan</h4>
+    
+      <div class="row">
+        <div class="col-sm-3">
+          <label for="bab1">BAB 1:</label>
+          <input type="number" id="bab1" name="bab1" style="width: 30px; margin-bottom: 10px;" required>
+          <label for="bab1">%</label>
+        </div>
+        <div class="col-sm-3">
+          <label for="mudah1">Mudah:</label>
+          <input type="number" id="mudah1" name="mudah1" style="width: 30px; margin-bottom: 10px;" required>
+          <label for="mudah1">%</label>
+        </div>
+    
+        <div class="col-sm-3">
+          <label for="sedang1">Sedang:</label>
+          <input type="number" id="sedang1" name="sedang1" style="width: 30px; margin-bottom: 10px;" required>
+          <label for="sedang1">%</label>
+        </div>
+    
+        <div class="col-sm-3">
+          <label for="sulit1">Sulit:</label>
+          <input type="number" id="sulit1" name="sulit1" style="width: 30px" required>
+          <label for="sulit1">%</label>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col-sm-3">
+          <label for="bab2">BAB 2:</label>
+          <input type="number" id="bab2" name="bab2" style="width: 30px; margin-bottom: 10px;" required>
+          <label for="bab2">%</label>
+        </div>
+        <div class="col-sm-3">
+          <label for="mudah2">Mudah:</label>
+          <input type="number" id="mudah2" name="mudah2" style="width: 30px; margin-bottom: 10px;" required>
+          <label for="mudah2">%</label>
+        </div>
+    
+        <div class="col-sm-3">
+          <label for="sedang2">Sedang:</label>
+          <input type="number" id="sedang2" name="sedang2" style="width: 30px; margin-bottom: 10px;" required>
+          <label for="sedang2">%</label>
+        </div>
+    
+        <div class="col-sm-3">
+          <label for="sulit2">Sulit:</label>
+          <input type="number" id="sulit2" name="sulit2" style="width: 30px" required>
+          <label for="sulit2">%</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <label for="bab3">BAB 3:</label>
+          <input type="number" id="bab3" name="bab3" style="width: 30px; margin-bottom: 10px;" required>
+          <label for="bab3">%</label>
+        </div>
+        <div class="col-sm-3">
+          <label for="mudah3">Mudah:</label>
+          <input type="number" id="mudah3" name="mudah3" style="width: 30px; margin-bottom: 10px;" required>
+          <label for="mudah3">%</label>
+        </div>
+    
+        <div class="col-sm-3">
+          <label for="sedang3">Sedang:</label>
+          <input type="number" id="sedang3" name="sedang3" style="width: 30px; margin-bottom: 10px;" required>
+          <label for="sedang3">%</label>
+        </div>
+    
+        <div class="col-sm-3">
+          <label for="sulit3">Sulit:</label>
+          <input type="number" id="sulit3" name="sulit3" style="width: 30px" required>
+          <label for="sulit3">%</label>
+        </div>
+      </div>
+    </div>
+    
+
+    <input type="submit" value="Buat Ujian">
+  </form>
+
+</body>
+</html>
